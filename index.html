@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>   -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+<div class="login-form ">
+    <p id="error"></p>
+    <div class="form-title">
+        Login 
+    </div> 
+        <div class="form-input">
+            <label for="username">Username</label>
+            <input type="text" required id="username">
+        </div>
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" required id="password">
+        </div>   
+            <div class="captcha"> 
+                <label for="captcha-input">Enter Captcha</label>     
+                <div class="preview"></div> 
+                <div class="captcha-form">
+                    <input type="text" id="captcha-form" placeholder="enter captcha here" onclick="validate()">
+                    <button class="captcha-refresh"> 
+                        <img src="imgs/refresh-button.png" >
+                    </button> 
+                </div> 
+            </div>
+            <div class="form-input" >
+                <button id="login-btn" >Login</button>
+            </div> 
+</div>  
+<script src="code.js">
+</script>
+</body>
+</html>
